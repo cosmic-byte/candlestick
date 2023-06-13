@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "candlestick"
+version = "0.1.0"
+description = " "
+authors = [
+    "Greg <gregobinna@gmail.com>",
+]
+
+[tool.poetry.scripts]
+candlestick-cli = "candlestick.interface.cli.app:main"
+
+[tool.poetry.dependencies]
+python = "~3.10"
+fastapi = "^0.75.0"
+uvicorn = "^0.17.0"
+alembic = "^1.6.5"
+psycopg2-binary = "^2.9.0"
+environs = "^9.3.2"
+pinject = "^0.14.1"
+singleton-decorator = "^1.0.0"
+sqlmodel = "^0.0.6"
+sqlalchemy = "1.4.35"
+python-dateutil = "^2.8.2"
+websocket-client = "^1.3.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.0"
+black = "22.3.0"
+mypy = "0.950"
+pytest-watch = "^4.2.0"
+pdbpp = "^0.10.2"
+flake8 = "^4.0.0"
+ipython = "^8.0.1"
+pytest-mock = "^3.3.1"
+pytest-freezegun = "^0.4.2"
+bandit = "^1.6.2"
+pylint = "^2.7.2"
+pyupgrade = "^2.7.2"
+safety = "^1.9.0"
+isort = "^5.6.4"
+sqlalchemy-stubs = "0.4"
+pytest-responses = "^0.5.0"
+pytest-asyncio = "^0.18.0"
+coverage = "^6.0.0"
+pytest-sugar = "^0.9.4"
+SQLAlchemy-Utils = "^0.38.2"
+types-python-dateutil = "^2.8.9"

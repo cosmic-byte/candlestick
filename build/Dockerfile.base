@@ -1,0 +1,17 @@
+FROM python:3.10
+
+ENV PIP_DISABLE_PIP_VERSION_CHECK=on
+
+RUN /usr/local/bin/python -m pip install --upgrade pip
+
+WORKDIR /app
+
+RUN pip install poetry
+ENV PATH="/root/.poetry/bin:${PATH}"
+
+RUN poetry config virtualenvs.create false
+
+COPY pyproject.toml ./
+COPY poetry.lock ./
+
+RUN poetry install

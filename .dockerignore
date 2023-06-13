@@ -1,0 +1,5 @@
+.venv
+.vscode
+.gitignore
+.pytest_cache
+.idea/
